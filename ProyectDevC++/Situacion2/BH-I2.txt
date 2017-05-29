@@ -1,0 +1,5 @@
+4
+Mes = Diciembre
+Nivel = Alto
+Precipitaciones = Fuertes
+Prediccion = Tormenta

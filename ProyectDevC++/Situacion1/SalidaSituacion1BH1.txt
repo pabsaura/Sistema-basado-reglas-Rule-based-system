@@ -1,0 +1,31 @@
+----Base de Hechos Inicial----
+Diametro = 3
+Forma = Redonda
+NSemillas = 1
+Color = Rojo
+-----Ejecutando----
+Dominio: IDENTIFICACION DE FRUTAS
+Objetivo: Fruta
+
+Se resuelve la regla R5: Si Forma = Redonda Y Diametro < 10 Entonces ClaseFrutal = Arbol  - Con prioridad: 0
+
+Se añade a la base de hechos el hecho: ClaseFrutal = Arbol
+
+Se resuelve la regla R6: Si NSemillas = 1 Entonces TipoSemilla = Hueso  - Con prioridad: 0
+
+Se añade a la base de hechos el hecho: TipoSemilla = Hueso
+
+Se resuelve la regla R13: Si ClaseFrutal = Arbol Y Color = Rojo Y TipoSemilla = Hueso Entonces Fruta = Cereza  - Con prioridad: 10
+
+Se añade a la base de hechos el hecho: Fruta = Cereza
+
+¡Se ha llegado al objetivo: Fruta!
+
+-------- IMPRIMIENDO LA BASE DE HECHOS FINAL -------
+Diametro = 3
+Forma = Redonda
+NSemillas = 1
+Color = Rojo
+ClaseFrutal = Arbol
+TipoSemilla = Hueso
+Fruta = Cereza

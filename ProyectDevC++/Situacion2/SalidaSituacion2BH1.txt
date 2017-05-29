@@ -1,0 +1,24 @@
+----Base de Hechos Inicial----
+Mes = Junio
+Precipitaciones = Ligera
+Nivel = Normal
+-----Ejecutando----
+Dominio: DETECCION DE INUNDACIONES
+Objetivo: Inundacion
+
+Se resuelve la regla R15: Si Precipitaciones = Ligera Entonces Cambio = Ninguno  - Con prioridad: 3
+
+Se añade a la base de hechos el hecho: Cambio = Ninguno
+
+Se resuelve la regla R24: Si Cambio = Ninguno Y Nivel = Normal Entonces Inundacion = No  - Con prioridad: 10
+
+Se añade a la base de hechos el hecho: Inundacion = No
+
+¡Se ha llegado al objetivo: Inundacion!
+
+-------- IMPRIMIENDO LA BASE DE HECHOS FINAL -------
+Mes = Junio
+Precipitaciones = Ligera
+Nivel = Normal
+Cambio = Ninguno
+Inundacion = No

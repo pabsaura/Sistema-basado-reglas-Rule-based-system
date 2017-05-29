@@ -1,0 +1,48 @@
+ATRIBUTOS
+9
+Mes Nom {Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre}
+Estacion Nom {Humeda,Seca}
+Precipitaciones Nom {Ninguna,Ligera,Fuertes}
+Profundidad NU 
+Prediccion Nom {Nuboso,Soleado,Tormenta}
+Nivel Nom {Bajo,Normal,Alto}
+Cambio Nom {Bajando,Ninguno,Subiendo}
+Lluvia Nom {Ninguna,Ligera,Fuerte}
+Inundacion Nom{Si,No}
+OBJETIVO
+Inundacion
+PRIORIDADES-REGLAS
+32
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+3
+3
+3
+3
+4
+4
+4
+9
+9
+9
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+

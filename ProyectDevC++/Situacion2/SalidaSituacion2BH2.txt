@@ -1,0 +1,31 @@
+----Base de Hechos Inicial----
+Mes = Diciembre
+Nivel = Alto
+Precipitaciones = Fuertes
+Prediccion = Tormenta
+-----Ejecutando----
+Dominio: DETECCION DE INUNDACIONES
+Objetivo: Inundacion
+
+Se resuelve la regla R22: Si Prediccion = Tormenta Entonces Lluvia = Fuerte  - Con prioridad: 9
+
+Se añade a la base de hechos el hecho: Lluvia = Fuerte
+
+Se resuelve la regla R16: Si Precipitaciones = Fuertes Entonces Cambio = Subiendo  - Con prioridad: 3
+
+Se añade a la base de hechos el hecho: Cambio = Subiendo
+
+Se resuelve la regla R32: Si Cambio = Subiendo Y Nivel = Alto Y Lluvia = Fuerte Entonces Inundacion = Si  - Con prioridad: 10
+
+Se añade a la base de hechos el hecho: Inundacion = Si
+
+¡Se ha llegado al objetivo: Inundacion!
+
+-------- IMPRIMIENDO LA BASE DE HECHOS FINAL -------
+Mes = Diciembre
+Nivel = Alto
+Precipitaciones = Fuertes
+Prediccion = Tormenta
+Lluvia = Fuerte
+Cambio = Subiendo
+Inundacion = Si
