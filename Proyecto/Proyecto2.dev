@@ -30,7 +30,7 @@ CompilerSet=0
 CompilerSettings=
 
 [Unit1]
-FileName=..\Ficheros + codigo\Atributo.cpp
+FileName=Atributo.cpp
 CompileCpp=1
 Folder=Proyecto2
 Compile=1
@@ -40,7 +40,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=..\Ficheros + codigo\Atributo.hpp
+FileName=Atributo.hpp
 CompileCpp=1
 Folder=Proyecto2
 Compile=1
@@ -50,7 +50,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=..\Ficheros + codigo\Hecho.cpp
+FileName=Hecho.cpp
 CompileCpp=1
 Folder=Proyecto2
 Compile=1
@@ -60,7 +60,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=..\Ficheros + codigo\Hecho.hpp
+FileName=Hecho.hpp
 CompileCpp=1
 Folder=Proyecto2
 Compile=1
@@ -70,7 +70,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=..\Ficheros + codigo\LectorConfiguracion.cpp
+FileName=LectorConfiguracion.cpp
 CompileCpp=1
 Folder=Proyecto2
 Compile=1
@@ -80,7 +80,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=..\Ficheros + codigo\LectorConfiguracion.hpp
+FileName=LectorConfiguracion.hpp
 CompileCpp=1
 Folder=Proyecto2
 Compile=1
@@ -90,7 +90,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit7]
-FileName=..\Ficheros + codigo\Main.cpp
+FileName=Main.cpp
 CompileCpp=1
 Folder=Proyecto2
 Compile=1
@@ -100,7 +100,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
-FileName=..\Ficheros + codigo\Regla.cpp
+FileName=Regla.cpp
 CompileCpp=1
 Folder=Proyecto2
 Compile=1
@@ -110,7 +110,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
-FileName=..\Ficheros + codigo\Regla.hpp
+FileName=Regla.hpp
 CompileCpp=1
 Folder=Proyecto2
 Compile=1
@@ -120,7 +120,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit10]
-FileName=..\Ficheros + codigo\Tipo.hpp
+FileName=Tipo.hpp
 CompileCpp=1
 Folder=Proyecto2
 Compile=1

@@ -154,41 +154,10 @@ void LectorBH::ejecutar(LectorBC* bc, LectorConfiguracion* lc) { //Ejecucion del
   // Ya tenemos los hechos iniciales insertados
 
   if (!(listaR.empty()) && !(listaHechos.empty()) && (continuar)){
-     // Tendremos que buscar el conjunto conflicto.
+     
 
-    /* for(std::list<Regla*>::iterator list_iter = listaR.begin(); //TODO BORRAR
-        list_iter != listaR.end(); list_iter++){
-          Regla* aux = *list_iter;
+     funcionConjuntoConflicto(listaR,lisAtributos);
 
-       }
-
-       for(std::list<Hecho*>::iterator list_iter = listaHechos.begin();
-          list_iter != listaHechos.end(); list_iter++){
-            Hecho* h = *list_iter;
-
-          }
-          */
-
-      funcionConjuntoConflicto(listaR,lisAtributos);
-
-      if(!(ConjuntoConflicto.empty())){ // Si no es vacio resolvemos y aplicamos
-      Regla *r = resolver(ConjuntoConflicto); // Escogemos la regla que toca
-      listaR.remove(r); // La borramos para no cogerla de nuevo
-      for(std::list<Regla*>::iterator list_iter = listaR.begin();
-         list_iter != listaR.end(); list_iter++){
-           Regla* aux = *list_iter;
-
-        }
-
-      Hecho *h = aplicar(r); //Guardamos la regla en la base de Hechos
-
-      listaHechos.push_back(h); // Nueva base de Hechos
-
-      continuar = comprobarContenida(obj);
-
-    }
-
-     //Aqui acaba el primer conjunto conflicto
     while(!(ConjuntoConflicto.empty()) && !(listaR.empty()) && (continuar)){
 
         ConjuntoConflicto.clear();
@@ -214,6 +183,7 @@ void LectorBH::ejecutar(LectorBC* bc, LectorConfiguracion* lc) { //Ejecucion del
     }
 
   }
+  if (continuar) fs<< "No se ha llegado al objetivo y no quedan mas reglas que lanzar. "<<endl<<endl;
    imprimirBaseHechos(lc,bc);
    fs.close();
 }
@@ -245,7 +215,6 @@ void LectorBH::imprimirBaseHechos(LectorConfiguracion* lc,LectorBC* bc){
        Hecho *h1 = *list_iter2;
        fs<<  h1->getNombre()<< " " << h1->getOp() << " " << h1->getValor()<<endl ;
 
-       //Falta imprimir objetivo
 
 
      }
@@ -295,10 +264,10 @@ void LectorBH::funcionConjuntoConflicto(list<Regla*> listaR,list<Atributo*> list
                  else if (ope==">"){
                    if(valor2>valor1)contador++;
                  }
-                 else if (ope=="=>"){
+                 else if (ope==">="){  //(ope=="=>")
                    if(valor2>=valor1)contador++;
                  }
-                 else if (ope=="=<"){
+                 else if (ope=="<="){  //(ope=="=<")
                    if(valor2<=valor1)contador++;
                  }
                  else if (ope=="="){

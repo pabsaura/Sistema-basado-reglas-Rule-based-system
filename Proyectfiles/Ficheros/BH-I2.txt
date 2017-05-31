@@ -1,4 +1,0 @@
-3
-Mes = Diciembre
-Nivel = Normal
-Precipitaciones = Ninguna
